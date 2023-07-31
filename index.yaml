@@ -61,7 +61,7 @@ entries:
       name: tchiotludo
     name: kestra
     sources:
-    - https://github.com/dverzolla/kestra-helm-charts
+    - https://github.com/kestra-io/helm-charts
     type: application
     urls:
     - kestra-0.5.1.tgz
