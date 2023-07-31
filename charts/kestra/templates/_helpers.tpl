@@ -127,6 +127,9 @@ kestra:
       secret-key: {{ .Values.minio.rootPassword }}
       secure: false
       bucket: kestra
+      resources:
+        requests:
+          memory: 256Mi
 {{- end }}
 {{- end -}}
 {{- end -}}
