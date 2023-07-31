@@ -1,0 +1,709 @@
+apiVersion: v1
+entries:
+  kestra:
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.5.1
+    created: "2023-07-26T08:06:20.160262575Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.17.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^18.3.1
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^4.0.13
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~11.9.2
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: 3747ba13e9a5e1d15347353b9bfb101ce604457c794205967b0220b6be38f337
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/dverzolla/kestra-helm-charts
+    type: application
+    urls:
+    - kestra-0.5.1.tgz
+    version: 0.5.1
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.5.0
+    created: "2023-07-26T08:06:20.140807337Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.17.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^18.3.1
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^4.0.13
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: 77268582683f0a8359cbb38c3633cea675c5f6db7c80344eaeec8c80b3d86a7d
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/dverzolla/kestra-helm-charts/
+    type: application
+    urls:
+    - kestra-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.4.4
+    created: "2023-07-26T08:06:20.127997181Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.16.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^3.5.8
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: c3dd7119af3157fe18f7402d00d7c89335be096a149b92be296d767a94d629f3
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/dverzolla/kestra-helm-charts/
+    type: application
+    urls:
+    - kestra-0.4.4.tgz
+    version: 0.4.4
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.4.3
+    created: "2023-07-26T08:06:20.11481602Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.16.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^3.5.8
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: e0668e2dc3cffea973e20389d6a808e8870b73dda304d169b91bcea679083634
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/kestra-io/helm-charts
+    type: application
+    urls:
+    - kestra-0.4.3.tgz
+    version: 0.4.3
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.4.2
+    created: "2023-07-26T08:06:20.101583259Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.16.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^3.5.8
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: a60a7906c5c1e1441fcac08729f54626f396fe419e1cdeb09f05a580e1659677
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/kestra-io/helm-charts
+    type: application
+    urls:
+    - kestra-0.4.2.tgz
+    version: 0.4.2
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.4.1
+    created: "2023-07-26T08:06:20.088251596Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.16.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^3.5.8
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: 513842374881946147a81a57b51e768be5cbeddfdab97f7218233f0b258451f7
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/kestra-io/helm-charts
+    type: application
+    urls:
+    - kestra-0.4.1.tgz
+    version: 0.4.1
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.4.0
+    created: "2023-07-26T08:06:20.075068735Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: ^7.16.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: ^15.3.3
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: ^3.5.8
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: 2ffbd499aec1279d2f67366905940b5394a43e4509617f81ba1b2e122c394914
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/kestra-io/helm-charts
+    type: application
+    urls:
+    - kestra-0.4.0.tgz
+    version: 0.4.0
+  - annotations:
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kestra.io/docs/
+      artifacthub.io/screenshots: |
+        - title: Home page
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/01.png
+        - title: Flows list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/02.png
+        - title: Flow topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/03.png
+        - title: Flow source
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/04.png
+        - title: Flow logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/05.png
+        - title: Execution gantt
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/06.png
+        - title: Namespaces list
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/08.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/09.png
+        - title: Execution topology
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/10.png
+        - title: Documentation
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/11.png
+        - title: Global logs
+          url: https://raw.githubusercontent.com/kestra-io/kestra.io/master/docs/user-interface-guide/assets/12.png
+    apiVersion: v1
+    appVersion: 0.3.1
+    created: "2023-07-26T08:06:20.061940275Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: infinitely scalable open source orchestration & scheduling platform.
+    digest: cb3315856a8574d682d276f60862e84d98c98e39d270e5c3c806929e913d9ff9
+    home: https://kestra.io
+    icon: https://kestra.io/favicon-192x192.png
+    keywords:
+    - orchestrator
+    - scheduler
+    - workflow
+    maintainers:
+    - email: tchiot.ludo@gmail.com
+      name: tchiotludo
+    name: kestra
+    sources:
+    - https://github.com/kestra-io/helm-charts
+    type: application
+    urls:
+    - kestra-0.2.6.tgz
+    version: 0.2.6
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.053105267Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: 7499f8cca26028893bdc0c32cf4f29a6857644942e062ca5293ae18c6655903f
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.044608763Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: 871881a6a512988d7691abe6826852d4bc693f07943beaad28965243389d756f
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.036371663Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: c9ee9ea85cf7e8b4becef3bb764a0c44168e252c29327bbc6015bfb1e919b970
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.02795116Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: 267fa2f731466c17533e772a80c82cec0f66715b0575229e72f9aebd346d82e0
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.019639959Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: f009408733c73838d2100abdd9cf386a1a7b612de80792f7498a840612482e76
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.010912752Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: 6bbc3009fd3efd94939fcdfab8ade7edc7fd0ccf2191f3e81a9ad1b4d4065ba8
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:20.001854542Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.5.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: http://storage.googleapis.com/kubernetes-charts-incubator
+      version: 0.20.7
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: bc5f67b84a2c4bee6469d39712cd077aa7ea61eff1077a12ac79b3ac3fbba878
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:19.996864681Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.5.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: http://storage.googleapis.com/kubernetes-charts-incubator
+      version: 0.20.7
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: e7486be33fd0d817f4dcdb08e9408a8e2ba7f70960ad1cc49325e19a2258739c
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:19.991499515Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.5.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: http://storage.googleapis.com/kubernetes-charts-incubator
+      version: 0.20.7
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: 08b21f6e5a1f2c71a7457a52d9bb201e67b19e7d03a02e7d4c4cc787793f51f0
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:19.985977248Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.5.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: http://storage.googleapis.com/kubernetes-charts-incubator
+      version: 0.20.7
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: 048d35a2ccd2afef7194ff77e52e187233b272cb19683bc8c5ec2fcaad44f127
+    home: https://kestra.io
+    name: kestra
+    urls:
+    - kestra-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-07-26T08:06:19.978214053Z"
+    dependencies:
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.5.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: http://storage.googleapis.com/kubernetes-charts-incubator
+      version: 0.20.7
+    description: Kestra is a platform to build, test, schedule & monitor complex pipelines.
+    digest: e097a8fd81ba2209db7c3bd67390d2754867bbfc12372654e314b4db9964909d
+    home: http://www.kestra.io
+    name: kestra
+    urls:
+    - kestra-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-07-26T08:06:19.972986989Z"
